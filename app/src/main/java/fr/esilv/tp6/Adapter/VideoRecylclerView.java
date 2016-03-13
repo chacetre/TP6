@@ -1,4 +1,4 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
+
+import fr.esilv.tp6.Model.VideoInfo;
+import fr.esilv.tp6.R;
+import fr.esilv.tp6.Model.YoutubeVideo;
 
 /**
  * Created by Charlotte on 26/02/2016.
@@ -38,7 +42,7 @@ public class VideoRecylclerView extends RecyclerView.Adapter<VideoRecylclerView.
         public int getItemCount() {return 0;}
 
 
-        public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
                 public TextView text;
 
                 public ViewHolder(View itemView) {
@@ -51,7 +55,7 @@ public class VideoRecylclerView extends RecyclerView.Adapter<VideoRecylclerView.
                 @Override
                 public void onClick(View v) {
                         Intent i = new Intent(v.getContext(), VideoInfo.class);
-                        i.putExtra("video",list.get(getAdapterPosition()));
+                       // i.putExtra("video",list.get(getAdapterPosition()));
                         v.getContext().startActivity(i);
                 }
         }

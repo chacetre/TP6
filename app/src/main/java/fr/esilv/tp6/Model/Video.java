@@ -1,4 +1,4 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

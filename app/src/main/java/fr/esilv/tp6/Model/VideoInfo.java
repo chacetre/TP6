@@ -1,4 +1,4 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Model;
 
 /**
  * Created by Charlotte on 26/02/2016.

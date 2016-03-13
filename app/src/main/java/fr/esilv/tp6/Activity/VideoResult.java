@@ -1,8 +1,8 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -19,10 +19,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import fr.esilv.tp6.Model.Video;
+import fr.esilv.tp6.R;
+import fr.esilv.tp6.Model.YoutubeVideo;
+
 /**
  * Created by Charlotte on 26/02/2016.
  */
-public class VideoResult extends AppCompatActivity {
+public class VideoResult extends Activity {
 
     private static final int RECOVERY_REQUEST = 25;
 

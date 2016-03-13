@@ -1,26 +1,25 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Activity;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.util.Set;
+import fr.esilv.tp6.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button mSearch;
     private EditText mSearchText;
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.LayoutManager mLayoutManager;
+   // private RecyclerView mRecyclerView;
+    //private RecyclerView.LayoutManager mLayoutManager;
     ///private HistoricItemAdapter mAdapter;
 
-    private Set<String> data;
+   // private Set<String> data;
 
 
     @Override
@@ -31,7 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mSearch = (Button) findViewById(R.id.b_search);
         mSearch.setOnClickListener(this);
 
-        mSearchText = (EditText) findViewById(R.id.keyword);
+        mSearchText = (EditText) findViewById(R.id.ed_search);
+
+       // SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
+        //data = prefs.getStringSet("historic", new HashSet<String>());
 
     }
 

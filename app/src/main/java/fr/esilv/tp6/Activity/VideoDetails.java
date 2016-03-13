@@ -1,4 +1,4 @@
-package fr.esilv.tp6;
+package fr.esilv.tp6.Activity;
 
 import android.os.Bundle;
 
@@ -6,6 +6,9 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+
+import fr.esilv.tp6.R;
+import fr.esilv.tp6.Model.YoutubeVideo;
 
 /**
  * Created by Charlotte on 26/02/2016.
@@ -24,8 +27,6 @@ public class VideoDetails extends YouTubeBaseActivity implements YouTubePlayer.O
 
         video = (YoutubeVideo) getIntent().getSerializableExtra("video");
 
-        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
-        youTubeView.initialize("AIzaSyAN_vNoKojmtZi2Uyq4Vfnj9HlsnEo8YEg", this);
     }
 
     @Override
